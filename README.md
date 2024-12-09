@@ -80,7 +80,7 @@ Tugas_Desktop/
 
 ## 📧 Bantuan
 
-Jika Anda menemui masalah, silakan hubungi saya melalui [email](mailto:jonathanpangkey@example.com).
+Jika Anda menemui masalah, silakan hubungi saya melalui [email](mailto:raphchristopher07@gmail.com).
 ``` 
 
 Markdown ini disesuaikan untuk pengguna Windows dengan sintaks dan perintah khas Windows (Command Prompt/PowerShell).
