@@ -1,0 +1,65 @@
+body {
+  font-family: "Rubik", sans-serif;
+}
+.form input,
+.form select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid rgb(163, 163, 163);
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+}
+.back-button a {
+  text-decoration: none;
+  font-size: 24px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: #333;
+}
+.logo {
+  width: 70px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.h1 {
+  text-align: center;
+  color: #28aadc;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15rem 0 15rem;
+  gap: 10px;
+}
+
+.formHasilTes {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.labelH3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.form .inputLainnya {
+  padding: 30px;
+}
+
+.form .btn {
+  width: 15%;
+  padding: 8px;
+  border: 0px;
+  background: #28aadc;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}

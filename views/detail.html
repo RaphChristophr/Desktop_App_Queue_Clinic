@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Info Antrian</title>
+    <link rel="stylesheet" href="css/antrian.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="back-button">
+            <a href="home.html">&#x2190;</a>
+        </div>
+        <img src="img/logo.png" alt="Logo" class="logo" />
+        <h1>DETAIL INFO ANTRIAN</h1>
+        <div class="details-box">
+            <div class="left-column">
+                <p id="nama-pasien"></p>
+                <p id="kontak"></p>
+                <p id="alamat"></p>
+                <p id="jenis-layanan"></p>
+                <div class="status-group">
+                    <button class="outline-button" id="no-antrian"></button>
+                </div>
+            </div>
+            <div class="right-column">
+                <p id="dokter-spesialis"></p>
+                <p id="tanggal-janji"></p>
+                <p id="waktu-janji"></p>
+                <div class="info-group">
+                    <button id="generate-more">More</button>
+                    <div class="showMore">
+                        <a id="info-rekam-medis" href="#">Info Rekap Medis</a>
+                        <div class="generate-laporan">
+                            <a id="generate-report">Generate Laporan</a>
+                            <div class="dropdown">
+                                <a id="resep-link" href="#">resep</a>
+                                <a id="lab-link">hasil lab</a>
+                            </div>
+                        </div>
+                        <div>
+                            <a id="statusButton">Update Status</a>
+                            <div class="dropdown-status">
+                                <a id="inProgress" href="#">In Progress</a>
+                                <a id="complete">Complete</a>
+                                <a id="cancelButton">Cancel</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <button id="info-rekam-medis">Info Rekam Medis</button>
+                    <div>
+                        <button id="generate-report">Generate Laporan</button>
+                        <div class="dropdown">
+                            <a id="resep-link" href="#">resep</a>
+                            <a id="lab-link">hasil lab</a>
+                        </div>
+                    </div> -->
+                    <!-- <div>
+                        <button id="generate-more">More</button>
+                        <div class="dropdown-more">
+                            <a id="inProgeress" href="#">In Progress</a>
+                            <a id="complete">Complete</a>
+                            <a id="cancelButton">Cancel</a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/infoantrian.js"></script>
+</body>
+
+</html>

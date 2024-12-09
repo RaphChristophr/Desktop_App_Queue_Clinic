@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/input.css" />
+  </head>
+
+  <body>
+    <div class="formContainer">
+      <div class="back-button">
+        <a href="home.html">&#x2190;</a>
+      </div>
+      <img src="img/logo.png" alt="Logo" class="logo" />
+      <h1 class="h1">FORM INPUT RESEP</h1>
+      <form id="pdfForm" class="form">
+        <p>Isi data resep dengan benar!</p>
+        <label for="" class="labelH3">Nama Dokter</label>
+        <input type="text" id="namaDokter" name="namaDokter" placeholder="Jawaban anda" />
+        <label for="" class="labelH3">Daftar Obat</label>
+        <input type="text" id="daftarObat" name="daftarObat" placeholder="Jawaban anda" />
+        <label for="dosis" class="labelH3">Dosis</label>
+        <select id="dosis" name="dosis">
+          <option value="5mg">5 mg</option>
+          <option value="10mg">10 mg</option>
+          <option value="20mg">20 mg</option>
+          <option value="50mg">50 mg</option>
+          <option value="100mg">100 mg</option>
+          <option value="250mg">250 mg</option>
+          <option value="500mg">500 mg</option>
+          <option value="1g">1 g</option>
+        </select>
+        <label for="frekuensi" class="labelH3">Frekuensi Penggunaan</label>
+        <select id="frekuensi" name="frekuensi">
+          <option value="1x1">1x1 sehari (satu per hari)</option>
+          <option value="2x1">2x1 sehari (dua per hari)</option>
+          <option value="3x1">3x1 sehari (tiga per hari)</option>
+          <option value="4x1">4x1 sehari (empat per hari)</option>
+        </select>
+        <label for="" class="labelH3">Instruksi Detail Lainnya</label>
+        <input type="text" class="inputLainnya" name="inputLainnya" placeholder="Jawaban anda" />
+        <button type="submit" class="btn">Konfirmasi</button>
+      </form>
+    </div>
+    <script src="js/inputResep.js"></script>
+  </body>
+</html>

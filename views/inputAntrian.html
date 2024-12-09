@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tambah Antrian</title>
+    <link rel="stylesheet" href="./css/input.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="back-button">
+      <a href="home.html">&#x2190;</a>
+    </div>
+    <img src="img/logo.png" alt="Logo" class="logo" />
+    <div class="formContainer">
+      <h1 class="h1">TAMBAH ANTRIAN</h1>
+      <form id="antrianForm" class="form">
+        <p>Isi data antrian dengan benar!</p>
+        <label for="nama_pasien" class="labelH3">Nama Pasien</label>
+        <input type="text" name="nama_pasien" id="nama_pasien" required />
+        <label for="Kontak" class="labelH3">Nomor Kontak</label>
+        <input type="text" name="kontak" id="kontak" pattern="\d*" inputmode="numeric" required />
+        <label for="Tanggal" class="labelH3">Tanggal</label>
+        <input type="date" name="tanggal" id="tanggal" required />
+        <label for="Jam" class="labelH3">Jam</label>
+        <input type="time" name="jam" id="jam" required />
+        <label for="Alamat" class="labelH3">Alamat</label>
+        <input type="text" name="alamat" id="alamat" required />
+        <label for="Layanan" class="labelH3">Jenis Layanan</label>
+        <select id="jenis-layanan" name="jenis_layanan">
+          <option value="Pemeriksaan Lab">Pemeriksaan Lab</option>
+          <option value="Pemeriksaan Umum">Pemeriksaan Umum</option>
+        </select>
+        <button type="submit" class="btn">Konfirmasi</button>
+      </form>
+    </div>
+
+    <script src="js/inputAntrian.js"></script>
+  </body>
+</html>

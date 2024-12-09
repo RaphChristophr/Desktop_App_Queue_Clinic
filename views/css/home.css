@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url(../img/bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  padding: 5rem 3rem 3rem 3rem;
+  font-weight: normal;
+}
+
+.logo {
+  width: 70px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.container {
+  display: flex;
+  padding: 2rem 3rem;
+  justify-content: space-between;
+}
+
+.call-queue-btn {
+  padding: 8px 12px;
+  background-color: #28aadc;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-left: 260px; /* Add some space between buttons */
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  /* font-weight: bold; */
+  position: relative;
+}
+
+.call-queue-btn:hover {
+  background-color: #1e8aad; /* Slightly darker shade on hover */
+}
+
+
+/* Right column */
+.calendar-container {
+  background: #fff;
+  width: 40%;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.calendar-container header {
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+
+header .calendar-navigation {
+  display: flex;
+}
+
+header .calendar-navigation span {
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  user-select: none;
+  color: #aeabab;
+  font-size: 1.9rem;
+}
+
+.calendar-navigation span:last-child {
+  margin-right: -10px;
+}
+
+header .calendar-navigation span:hover {
+  background: #f2f2f2;
+}
+
+header .calendar-current-date {
+  font-weight: 500;
+  font-size: 1.45rem;
+}
+
+.calendar-body {
+  padding: 20px;
+}
+
+.calendar-body ul {
+  list-style: none;
+  flex-wrap: wrap;
+  display: flex;
+  text-align: center;
+}
+
+.calendar-body .calendar-dates {
+  margin-bottom: 20px;
+}
+
+.calendar-body li {
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+  color: #414141;
+}
+
+.calendar-body .calendar-weekdays li {
+  cursor: default;
+  font-weight: 500;
+}
+
+.calendar-body .calendar-dates li {
+  margin-top: 30px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.calendar-dates li.inactive {
+  color: #aaa;
+}
+
+.calendar-dates li.active {
+  color: #fff;
+}
+
+.calendar-dates li::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.calendar-dates li.active::before {
+  background: #67eab6;
+}
+
+.calendar-dates li:not(.active):hover::before {
+  background: #e4e1e1;
+}
+/* Right column */
+
+/* Left column*/
+.heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading a {
+  text-decoration: none;
+}
+
+.text-heading {
+  font-size: 20px;
+}
+
+.queue-now {
+  position: absolute;
+  padding: 8px 12px;
+  background-color: #28aadc;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-left: 213px; /* Menambahkan margin untuk menjaga jarak antara elemen */
+  text-decoration: none; /* Menghapus garis bawah default untuk tautan */
+}
+
+.add-btn {
+  padding: 8px 12px;
+  background-color: #28aadc;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.add-btn:hover {
+  background-color: #1e8aad; /* Warna sedikit lebih gelap saat dihover */
+}
+
+.left-container {
+  width: 55%;
+}
+
+.table-container {
+  margin-top: 1.5rem;
+  width: 100%;
+  overflow: hidden;
+  height: fit-content;
+  border-radius: 4px;
+  border: 1px solid rgb(208, 207, 207);
+}
+
+table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid rgb(184, 184, 184);
+  padding: 10px 0;
+  border: none;
+  text-align: left;
+  text-align: center;
+}
+
+th {
+  background-color: #28aadc;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Status-specific styles */
+td.status::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+}
+
+.status-waiting::before {
+  background-color: orange; /* Color for waiting status */
+}
+
+.status-in-progress::before {
+  background-color: rgb(0, 174, 255); /* Color for in-progress status */
+}
+
+.status-completed::before {
+  background-color: green; /* Color for completed status */
+}
+
+.status-cancelled::before {
+  background-color: red; /* Color for completed status */
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    flex-direction: column-reverse;
+    gap: 20px;
+    align-items: center;
+  }
+  .left-container {
+    width: 100%;
+  }
+  .calendar-container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Hasil Lab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/input.css" />
+  </head>
+
+  <body>
+    <div class="back-button">
+      <a href="home.html">&#x2190;</a>
+    </div>
+    <img src="img/logo.png" alt="Logo" class="logo" />
+    <div class="formContainer">
+      <img src="img/logo.png" alt="Logo" class="logo" />
+      <h1 class="h1">FORM INPUT HASIL LAB</h1>
+      <form id="labForm" class="form">
+        <p>Isi data hasil pemeriksaan lab dengan benar!</p>
+        <label for="tanggalPelaksanaan" class="labelH3">Tanggal Pelaksanaan</label>
+        <input type="date" id="tanggalPelaksanaan" name="tanggalPelaksanaan" required />
+        <label for="jenisTes" class="labelH3">Jenis Tes</label>
+        <select name="jenisTes" id="jenisTes" required>
+          <option value="">Pilih Jenis Tes</option>
+          <option value="darah">Tes Darah</option>
+          <option value="kolesterol">Tes Kolesterol</option>
+        </select>
+        <div id="formHasilTes" class="formHasilTes"></div>
+        <label for="instruksiDetailLainnya" class="labelH3">Instruksi Detail Lainnya</label>
+        <input type="text" id="instruksiDetailLainnya" name="instruksiDetailLainnya" class="inputLainnya" placeholder="Jawaban anda" />
+        <button type="submit" class="btn">Konfirmasi</button>
+      </form>
+    </div>
+    <script src="js/inputLab.js"></script>
+  </body>
+</html>

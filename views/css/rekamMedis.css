@@ -1,0 +1,51 @@
+body {
+  font-family: "Rubik", sans-serif;
+  justify-content: center;
+  margin: 0;
+  background: url(../img/bg.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.container {
+  padding: 4rem 3rem;
+}
+
+.back-button a {
+  text-decoration: none;
+  font-size: 24px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: #333;
+}
+
+.logo {
+  width: 70px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #28aadc;
+}
+
+.btn {
+  padding: 8px 12px;
+  background-color: #28aadc;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.rekam-medis-item {
+  border: 1px solid rgb(207, 207, 207);
+  margin: 20px 0;
+  padding: 10px 15px;
+  background-color: white;
+  border-radius: 5px;
+}
