@@ -1,6 +1,4 @@
-### README.md (Untuk Pengguna Windows)
-
-# Tugas Desktop
+# Steps
 
 Aplikasi desktop berbasis Electron yang sederhana. Panduan ini dibuat khusus untuk pengguna Windows.
 
