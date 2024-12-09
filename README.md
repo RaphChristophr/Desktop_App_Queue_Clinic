@@ -1,46 +1,86 @@
-## Langkah langkah penggunaan
+### README.md (Untuk Pengguna Windows)
 
-0. Install dulu nodejs deng git kalo belum ada.
+# Tugas Desktop
 
-### Mengkloning Repositori
+Aplikasi desktop berbasis Electron yang sederhana. Panduan ini dibuat khusus untuk pengguna Windows.
 
-1. Buka terminal atau command prompt.
+---
 
-2. Navigasikan ke direktori di mana Anda ingin mengkloning repositori menggunakan perintah `cd`:
-   ```sh
-   cd /path/to/clone/the/repository
+## 📋 Prasyarat
+
+Pastikan Anda sudah menginstal:
+
+- **Node.js**: [Unduh dan instal Node.js](https://nodejs.org/)
+- **Git**: [Unduh dan instal Git](https://git-scm.com/)
+
+---
+
+## 🚀 Langkah-Langkah Instalasi
+
+### 1️⃣ Kloning Repositori
+
+1. Buka **Command Prompt** atau **PowerShell**.
+2. Arahkan ke direktori tempat Anda ingin menyimpan repositori:
+   ```cmd
+   cd C:\path\to\clone\the\repository
+   ```
+3. Kloning repositori:
+   ```cmd
+   git clone https://github.com/RaphChristophr/Desktop_App_Queue_Clinic.git
    ```
 
-3. Klone repositori dari GitHub:
-   ```sh
-   git clone https://github.com/Jonathanpangkey/Tugas_Desktop.git
-   ```
+### 2️⃣ Masuk ke Direktori Proyek
 
-4. Masuk ke dalam direktori yang telah di-klon:
-   ```sh
+1. Pindah ke direktori proyek:
+   ```cmd
    cd Tugas_Desktop
    ```
 
-### Menginstal Dependensi
+### 3️⃣ Instalasi Dependensi
 
-5. Instal dependensi proyek menggunakan npm:
-   ```sh
+1. Instal semua dependensi yang diperlukan:
+   ```cmd
    npm install
    ```
 
-### Menjalankan Aplikasi
+---
 
-6. Jalankan aplikasi Electron:
-   ```sh
+## 🏃 Menjalankan Aplikasi
+
+1. Jalankan aplikasi menggunakan perintah:
+   ```cmd
    npm start
    ```
+2. Aplikasi akan berjalan, dan Anda akan melihat halaman login di jendela aplikasi.
 
-### Berinteraksi dengan Aplikasi
+---
 
-7. Setelah aplikasi dimulai, Anda akan melihat halaman login.
+## 🔐 Login
 
-8. Gunakan kredensial default untuk masuk:
-   - Nama Pengguna: `admin`
-   - Kata Sandi: `admin123`
+Gunakan kredensial berikut untuk masuk ke aplikasi:
 
-9. Setelah berhasil masuk, Anda akan diarahkan ke halaman utama.
+- **Nama Pengguna**: `admin`
+- **Kata Sandi**: `admin123`
+
+---
+
+## 📂 Struktur Direktori (Opsional)
+
+```
+Tugas_Desktop/
+├── src/
+│   ├── main.js
+│   ├── renderer.js
+│   └── index.html
+├── package.json
+└── README.md
+```
+
+---
+
+## 📧 Bantuan
+
+Jika Anda menemui masalah, silakan hubungi saya melalui [email](mailto:jonathanpangkey@example.com).
+``` 
+
+Markdown ini disesuaikan untuk pengguna Windows dengan sintaks dan perintah khas Windows (Command Prompt/PowerShell).
